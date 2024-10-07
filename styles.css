@@ -86,14 +86,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin-top: 20px;
+    gap: 20px;
+    margin: 30px 0px;
     flex-wrap: wrap;
 }
 .card_01,.card_02, .card_03{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 20px 0;
     min-width: 300px;
+    flex-grow: 1;
+    
 }
 .card_01{
     
@@ -216,6 +218,12 @@ body{
 }
 
 /* TABLES */
+.tables{
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+}
 .tables_top{
     display: flex;
     justify-content: space-between;
@@ -234,9 +242,43 @@ body{
 .input_top>input{
     padding: 5px;
     border: none;
+    background-color: #f8f8f8;
     width: 100%;
     margin-right: 10px;
 }
 .input_top>input:focus{
     outline: none;
+}
+.input_top_right .btn1{
+    border: 1px solid #dad9d9;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.input_top_right .btn2{
+    border: 1px solid #dad9d9;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.table{
+    overflow-x: auto;
+}
+.table>table{
+    min-width: 100%;
+    border: none;
+    margin-top: 20px;
+}
+th{
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: left;
+    border: none;
+}
+td{
+    padding: 10px;
+    border: none;
 }
