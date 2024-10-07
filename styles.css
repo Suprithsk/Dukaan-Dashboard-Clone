@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+}
+.header_left>h2{
+    margin: 0 10px 0 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.header_left>p{
+    font-size: 0.8rem;
+    color: gray;
+}
+.header_left{
+    display: flex;
+    align-items: center;
+}
+.header_right{
+    background-color: #ede9e9;
+    padding: 10px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+.header_right>input{
+    padding: 5px;
+    border: none;
+    width: 300px;
+    margin-right: 10px;
+    background-color: #ede9e9;
+}
+.header_right>input:focus{
+    outline: none;
+}
+.header_third>img, .header_third>svg{
+    background-color: #ede9e9;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 768px){
+    .header_right{
+        display: none;
+    }
+    
+}
+.body{
+    padding: 20px 30px;
+}
+.top_layer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.top_layer>h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.this_month{
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #d1cbcb;
+    border-radius: 5px;
+}
+.this_month>p{
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.card_01,.card_02, .card_03{
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    min-width: 300px;
+}
+.card_01{
+    
+    background-color: #146eb4;
+}
+.card_01>p{
+    font-size: 1rem;
+    color: gray;
+    margin: 20px 20px;
+    color: white;
+}
+.card_01>.second_line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px;
+}
+.card_01>.third_line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+    padding:  10px 20px;
+    color: white;
+    border-radius: 8px;
+    background-color: #0e4f82;
+}
+.card_01:hover{
+    background-color: #0e4f82;
+    transition: background-color 0.2s;
+}
+.card_01>.second_line>h2{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: white;
+}
+.card_01>.second_line>p{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: white;
+}
+.card_01>.third_line>h2{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 400;
+}
+.card_01>.third_line>p{
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+}
+.card_02{
+    background-color: #fffdfd;
+    padding: 20px;
+    height: fit-content;
+}
+.card_02>h2{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: gray;
+}
+.card_02>.second_line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_02>.second_line>h2{
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+.card_02>.second_line>p{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #146eb4;
+}
+.card_03{
+    background-color: #fffdfd;
+    padding: 20px;
+    height: fit-content;
+}
+.card_03>h2{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: gray;
+}
+.card_03>h1{
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+/* THirdx */
+.third_layer>h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+/* Fourth layer  */
+.fourth_layer{
+    margin-top: 10px;
+}
+.btn_fourth_one{
+    background-color: #d1cbcb;
+    color: rgb(80, 77, 77);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn_fourth_two{
+    background-color: #146eb4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* TABLES */
+.tables_top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+.input_top{
+    padding: 10px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    border: 1px solid #cbcaca;
+    width: 300px;
+}
+.input_top>input{
+    padding: 5px;
+    border: none;
+    width: 100%;
+    margin-right: 10px;
+}
+.input_top>input:focus{
+    outline: none;
+}
